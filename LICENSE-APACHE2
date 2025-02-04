@@ -197,3 +197,5 @@ Individual files contain the following tag instead of the full license
 text.
 
     SPDX-License-Identifier:  Apache-2.0
+
+This enables machine processing of license information based on the SPDX
