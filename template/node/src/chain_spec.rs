@@ -50,3 +50,5 @@ fn properties() -> Properties {
     properties.insert("ss58Format".into(), SS58Prefix::get().into());
     properties
 }
+
+const UNITS: Balance = 1_000_000_000_000_000_000;
