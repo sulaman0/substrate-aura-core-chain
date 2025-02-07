@@ -77,3 +77,38 @@ where
 	A: ChainApi<Block = B> + 'static,
 	CIDP: CreateInherentDataProviders<B, ()> + Send + 'static,
 	CT: fp_rpc::ConvertTransaction<<B as BlockT>::Extrinsic> + Send + Sync + 'static,
+{
+	use pallet_transaction_payment_rpc::{TransactionPayment, TransactionPaymentApiServer};
+	use sc_consensus_manual_seal::rpc::{ManualSeal, ManualSealApiServer};
+	use substrate_frame_rpc_system::{System, SystemApiServer};
+
+	let mut io = RpcModule::new(());
+	let FullDeps {
+		client,
+		pool,
+		deny_unsafe,
+		command_sink,
+		eth,
+	} = deps;
+
+	io.merge(System::new(client.clone(), pool, deny_unsafe).into_rpc())?;
+	io.merge(TransactionPayment::new(client).into_rpc())?;
+
+	if let Some(command_sink) = command_sink {
+		io.merge(
+			// We provide the rpc handler with the sending end of the channel to allow the rpc
+			// send EngineCommands to the background block authorship task.
+			ManualSeal::new(command_sink).into_rpc(),
+		)?;
+	}
+
+	// Ethereum compatibility RPCs
+	let io = create_eth::<_, _, _, _, _, _, _, DefaultEthConfig<C, BE>>(
+		io,
+		eth,
+		subscription_task_executor,
+		pubsub_notification_sinks,
+	)?;
+
+	Ok(io)
+}
