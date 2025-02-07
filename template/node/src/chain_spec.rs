@@ -31,3 +31,22 @@ type AccountPublic = <Signature as Verify>::Signer;
 /// Generate an account ID from seed.
 /// For use with `AccountId32`, `dead_code` if `AccountId20`.
 
+#[allow(dead_code)]
+pub fn get_account_id_from_seed<TPublic: Public>(seed: &str) -> AccountId
+where
+    AccountPublic: From<<TPublic::Pair as Pair>::Public>,
+{
+    AccountPublic::from(get_from_seed::<TPublic>(seed)).into_account()
+}
+
+/// Generate an Aura authority key.
+pub fn authority_keys_from_seed(s: &str) -> (AuraId, GrandpaId) {
+    (get_from_seed::<AuraId>(s), get_from_seed::<GrandpaId>(s))
+}
+
+fn properties() -> Properties {
+    let mut properties = Properties::new();
+    properties.insert("tokenDecimals".into(), 18.into());
+    properties.insert("ss58Format".into(), SS58Prefix::get().into());
+    properties
+}
