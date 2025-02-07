@@ -100,10 +100,6 @@ impl frame_benchmarking_cli::ExtrinsicBuilder for TransferKeepAliveBuilder {
     }
 }
 
-/// Create a transaction using the given `call`.
-///
-/// Note: Should only be used for benchmarking.
-
 pub fn create_benchmark_extrinsic(
     client: &Client,
     sender: ecdsa::Pair,
