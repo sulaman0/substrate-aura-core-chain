@@ -136,9 +136,21 @@ pub fn create_benchmark_extrinsic(
         pallet_transaction_payment::ChargeTransactionPayment::<runtime::Runtime>::from(0),
     );
 
-
+    let raw_payload = runtime::SignedPayload::from_raw(
+        call.clone(),
+        extra.clone(),
+        (
+            (),
+            runtime::VERSION.spec_version,
+            runtime::VERSION.transaction_version,
+            genesis_hash,
+            best_hash,
+            (),
+            (),
+            (),
+        ),
+    );
     let signature = raw_payload.using_encoded(|e| sender.sign(e));
-
     runtime::UncheckedExtrinsic::new_signed(
         call,
         AccountId20::from(sender.public()),
