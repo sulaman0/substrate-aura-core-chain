@@ -40,3 +40,14 @@ pub struct FullDeps<B: BlockT, C, P, A: ChainApi, CT, CIDP> {
 	pub eth: EthDeps<B, C, P, A, CT, CIDP>,
 }
 pub struct DefaultEthConfig<C, BE>(std::marker::PhantomData<(C, BE)>);
+
+impl<B, C, BE> fc_rpc::EthConfig<B, C> for DefaultEthConfig<C, BE>
+where
+	B: BlockT,
+	C: StorageProvider<B, BE> + Sync + Send + 'static,
+	BE: Backend<B> + 'static,
+{
+	type EstimateGasAdapter = ();
+	type RuntimeStorageOverride =
+	fc_rpc::frontier_backend_client::SystemAccountId20StorageOverride<B, C, BE>;
+}
