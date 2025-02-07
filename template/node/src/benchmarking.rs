@@ -135,7 +135,6 @@ pub fn create_benchmark_extrinsic(
         frame_system::CheckWeight::<runtime::Runtime>::new(),
         pallet_transaction_payment::ChargeTransactionPayment::<runtime::Runtime>::from(0),
     );
-
     let raw_payload = runtime::SignedPayload::from_raw(
         call.clone(),
         extra.clone(),
