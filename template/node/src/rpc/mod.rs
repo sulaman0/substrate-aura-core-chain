@@ -51,3 +51,13 @@ where
 	type RuntimeStorageOverride =
 	fc_rpc::frontier_backend_client::SystemAccountId20StorageOverride<B, C, BE>;
 }
+
+pub fn create_full<B, C, P, BE, A, CT, CIDP>(
+	deps: FullDeps<B, C, P, A, CT, CIDP>,
+	subscription_task_executor: SubscriptionTaskExecutor,
+	pubsub_notification_sinks: Arc<
+		fc_mapping_sync::EthereumBlockNotificationSinks<
+			fc_mapping_sync::EthereumBlockNotification<B>,
+		>,
+	>,
+) -> Result<RpcModule<()>, Box<dyn std::error::Error + Send + Sync>>
