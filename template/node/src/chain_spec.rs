@@ -71,7 +71,7 @@ pub fn development_config(enable_manual_seal: bool) -> ChainSpec {
                 AccountId::from(hex!("C0F0f4ab324C46e55D02D0033343B4Be8A55532d")), // Faith
             ],
             // Initial PoA authorities
-            vec![],
+            vec![authority_keys_from_seed("Alice")],
             // Ethereum chain ID
             SS58Prefix::get() as u64,
             enable_manual_seal,
