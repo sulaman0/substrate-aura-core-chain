@@ -52,3 +52,4 @@ fn properties() -> Properties {
 }
 
 const UNITS: Balance = 1_000_000_000_000_000_000;
+pub fn development_config(enable_manual_seal: bool) -> ChainSpec {}
