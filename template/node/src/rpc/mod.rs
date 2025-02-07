@@ -102,5 +102,13 @@ where
 		)?;
 	}
 
+
+	// Ethereum compatibility RPCs
+	let io = create_eth::<_, _, _, _, _, _, _, DefaultEthConfig<C, BE>>(
+		io,
+		eth,
+		subscription_task_executor,
+		pubsub_notification_sinks,
+	)?;
 	Ok(io)
 }
