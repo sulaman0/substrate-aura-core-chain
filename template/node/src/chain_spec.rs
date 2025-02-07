@@ -17,3 +17,17 @@ use frontier_template_runtime::{AccountId, Balance, SS58Prefix, Signature, WASM_
 
 /// Specialized `ChainSpec`. This is a specialization of the general Substrate ChainSpec type.
 pub type ChainSpec = sc_service::GenericChainSpec;
+
+/// Generate a crypto pair from seed.
+pub fn get_from_seed<TPublic: Public>(seed: &str) -> <TPublic::Pair as Pair>::Public {
+    TPublic::Pair::from_string(&format!("//{}", seed), None)
+        .expect("static values are valid; qed")
+        .public()
+}
+
+#[allow(dead_code)]
+type AccountPublic = <Signature as Verify>::Signer;
+
+/// Generate an account ID from seed.
+/// For use with `AccountId32`, `dead_code` if `AccountId20`.
+
