@@ -39,3 +39,4 @@ pub struct FullDeps<B: BlockT, C, P, A: ChainApi, CT, CIDP> {
 	/// Ethereum-compatibility specific dependencies.
 	pub eth: EthDeps<B, C, P, A, CT, CIDP>,
 }
+pub struct DefaultEthConfig<C, BE>(std::marker::PhantomData<(C, BE)>);
