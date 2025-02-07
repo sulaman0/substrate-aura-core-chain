@@ -26,3 +26,16 @@ use frontier_template_runtime::{AccountId, Balance, Hash, Nonce};
 mod eth;
 pub use self::eth::{create_eth, EthDeps};
 
+/// Full client dependencies.
+pub struct FullDeps<B: BlockT, C, P, A: ChainApi, CT, CIDP> {
+	/// The client instance to use.
+	pub client: Arc<C>,
+	/// Transaction pool instance.
+	pub pool: Arc<P>,
+	/// Whether to deny unsafe calls
+	pub deny_unsafe: DenyUnsafe,
+	/// Manual seal command sink
+	pub command_sink: Option<mpsc::Sender<EngineCommand<Hash>>>,
+	/// Ethereum-compatibility specific dependencies.
+	pub eth: EthDeps<B, C, P, A, CT, CIDP>,
+}
