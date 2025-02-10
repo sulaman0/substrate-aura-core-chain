@@ -54,16 +54,4 @@ pub enum Subcommand {
 
 	/// Revert the chain to a previous state.
 	Revert(sc_cli::RevertCmd),
-
-	/// Sub-commands concerned with benchmarking.
-	#[cfg(feature = "runtime-benchmarks")]
-	#[command(subcommand)]
-	Benchmark(frame_benchmarking_cli::BenchmarkCmd),
-
-	/// Sub-commands concerned with benchmarking.
-	#[cfg(not(feature = "runtime-benchmarks"))]
-	Benchmark,
-
-	/// Db meta columns information.
-	FrontierDb(fc_cli::FrontierDbCmd),
 }
