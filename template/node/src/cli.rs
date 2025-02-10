@@ -46,6 +46,18 @@ pub enum Subcommand {
 	/// Export the state of a given block into a chain spec.
 	ExportState(sc_cli::ExportStateCmd),
 
+	/// Sub-commands concerned with benchmarking.
+	#[cfg(feature = "runtime-benchmarks")]
+	#[command(subcommand)]
+	Benchmark(frame_benchmarking_cli::BenchmarkCmd),
+
+	/// Sub-commands concerned with benchmarking.
+	#[cfg(not(feature = "runtime-benchmarks"))]
+	Benchmark,
+
+	/// Db meta columns information.
+	FrontierDb(fc_cli::FrontierDbCmd),
+
 	/// Import blocks.
 	ImportBlocks(sc_cli::ImportBlocksCmd),
 
