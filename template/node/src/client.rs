@@ -49,3 +49,22 @@ BaseRuntimeApiCollection<Block>
 + pallet_transaction_payment_rpc_runtime_api::TransactionPaymentApi<Block, Balance>
 {
 }
+
+impl<Block, AuraId, AccountId, Nonce, Balance, Api>
+RuntimeApiCollection<Block, AuraId, AccountId, Nonce, Balance> for Api
+where
+    Block: BlockT,
+    AuraId: Codec,
+    AuraId: Codec,
+    AccountId: Codec,
+    Nonce: Codec,
+    Balance: Codec + MaybeDisplay,
+    Api: BaseRuntimeApiCollection<Block>
+    + EthCompatRuntimeApiCollection<Block>
+    + sp_consensus_aura::AuraApi<Block, AuraId>
+    + sp_consensus_grandpa::GrandpaApi<Block>
+    + frame_system_rpc_runtime_api::AccountNonceApi<Block, AccountId, Nonce>
+    + pallet_transaction_payment_rpc_runtime_api::TransactionPaymentApi<Block, Balance>,
+{
+}
+
