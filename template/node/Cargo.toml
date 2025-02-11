@@ -92,3 +92,13 @@ default = [
     "txpool",
     "rpc-binary-search-estimate",
 ]
+
+rocksdb = [
+    "sc-cli/rocksdb",
+    "sc-service/rocksdb",
+    "fc-cli/rocksdb",
+    "fc-db/rocksdb",
+    "fc-mapping-sync/rocksdb",
+    "fc-rpc/rocksdb",
+    "frontier-template-runtime/with-rocksdb-weights",
+]
