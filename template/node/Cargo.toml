@@ -22,3 +22,23 @@ log = { workspace = true }
 scale-codec = { package = "parity-scale-codec", workspace = true }
 serde_json = { workspace = true, features = ["arbitrary_precision"] }
 
+# Substrate
+prometheus-endpoint = { package = "substrate-prometheus-endpoint", workspace = true }
+sc-basic-authorship = { workspace = true }
+sc-chain-spec = { workspace = true }
+sc-cli = { workspace = true }
+sc-client-api = { workspace = true }
+sc-consensus = { workspace = true }
+sc-consensus-aura = { workspace = true }
+sc-consensus-grandpa = { workspace = true }
+sc-consensus-manual-seal = { workspace = true }
+sc-executor = { workspace = true }
+sc-network = { workspace = true }
+sc-network-sync = { workspace = true }
+sc-offchain = { workspace = true }
+sc-rpc = { workspace = true }
+sc-rpc-api = { workspace = true }
+sc-service = { workspace = true }
+sc-telemetry = { workspace = true }
+sc-transaction-pool = { workspace = true }
+sc-transaction-pool-api = { workspace = true }
