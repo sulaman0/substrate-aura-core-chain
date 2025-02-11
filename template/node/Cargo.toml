@@ -1,0 +1,14 @@
+[package]
+name = "frontier-template-node"
+version = "0.0.0"
+license = "Unlicense"
+build = "build.rs"
+description = "A fresh FRAME-based Substrate node, ready for hacking."
+publish = false
+authors = { workspace = true }
+edition = { workspace = true }
+repository = { workspace = true }
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+
