@@ -106,3 +106,8 @@ rocksdb = [
 paritydb = [
     "frontier-template-runtime/with-paritydb-weights",
 ]
+
+sql = [
+    "fc-db/sql",
+    "fc-mapping-sync/sql",
+]
