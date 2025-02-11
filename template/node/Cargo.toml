@@ -84,3 +84,11 @@ frontier-template-runtime = { workspace = true, features = ["std"] }
 [build-dependencies]
 substrate-build-script-utils = { workspace = true }
 
+
+[features]
+default = [
+    "rocksdb",
+    "sql",
+    "txpool",
+    "rpc-binary-search-estimate",
+]
