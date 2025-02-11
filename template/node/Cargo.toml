@@ -113,3 +113,4 @@ sql = [
 ]
 
 txpool = ["fc-rpc/txpool"]
+rpc-binary-search-estimate = ["fc-rpc/rpc-binary-search-estimate"]
