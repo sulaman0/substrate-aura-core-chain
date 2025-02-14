@@ -84,4 +84,13 @@ pub fn run() -> sc_cli::Result<()> {
             Ok((cmd.run(client, config.database), task_manager))
         })
     }
+
+    Some(Subcommand::ExportState(cmd)) => {
+        let runner = cli.create_runner(cmd)?;
+        runner.async_run(|mut config| {
+            let (client, _, _, task_manager, _) =
+                service::new_chain_ops(&mut config, &cli.eth)?;
+            Ok((cmd.run(client, config.chain_spec), task_manager))
+        })
+    }
 }
