@@ -66,4 +66,13 @@ pub fn run() -> sc_cli::Result<()> {
         let runner = cli.create_runner(cmd)?;
         runner.sync_run(|config| cmd.run(config.chain_spec, config.network))
     }
+
+    Some(Subcommand::CheckBlock(cmd)) => {
+        let runner = cli.create_runner(cmd)?;
+        runner.async_run(|mut config| {
+            let (client, _, import_queue, task_manager, _) =
+                service::new_chain_ops(&mut config, &cli.eth)?;
+            Ok((cmd.run(client, import_queue), task_manager))
+        })
+    }
 }
