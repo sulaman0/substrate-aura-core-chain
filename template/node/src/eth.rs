@@ -36,3 +36,7 @@ pub enum BackendType {
 }
 /// The ethereum-compatibility configuration used to run a node.
 #[derive(Clone, Debug, clap::Parser)]
+pub struct EthConfiguration {
+/// Maximum number of logs in a query.
+	#[arg(long, default_value = "10000")]
+	pub max_past_logs: u32,
