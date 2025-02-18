@@ -28,7 +28,9 @@ pub fn db_config_dir(config: &Configuration) -> PathBuf {
 /// Available frontier backend types.
 #[derive(Debug, Copy, Clone, Default, clap::ValueEnum)]
 pub enum BackendType {
-/// Either RocksDb or ParityDb as per inherited from the global backend settings.
- 	#[default]
+	/// Either RocksDb or ParityDb as per inherited from the global backend settings.
+	#[default]
 	KeyValue,
-
+	/// Sql database with custom log indexing.
+	Sql,
+}
