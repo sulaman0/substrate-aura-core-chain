@@ -15,3 +15,4 @@ use sp_api::ConstructRuntimeApi;
 use sp_core::H256;
 use sp_runtime::traits::Block as BlockT;
 // Frontier
+pub use fc_consensus::FrontierBlockImport;
