@@ -25,3 +25,5 @@ pub type FrontierBackend<B, C> = fc_db::Backend<B, C>;
 pub fn db_config_dir(config: &Configuration) -> PathBuf {
 	config.base_path.config_dir(config.chain_spec.id())
 }
+/// Available frontier backend types.
+#[derive(Debug, Copy, Clone, Default, clap::ValueEnum)]
