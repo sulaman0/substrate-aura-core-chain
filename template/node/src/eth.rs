@@ -17,3 +17,4 @@ use sp_runtime::traits::Block as BlockT;
 // Frontier
 pub use fc_consensus::FrontierBlockImport;
 use fc_rpc::EthTask;
+pub use fc_rpc_core::types::{FeeHistoryCache, FeeHistoryCacheLimit, FilterPool};
