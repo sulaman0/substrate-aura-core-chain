@@ -27,4 +27,4 @@ pub fn db_config_dir(config: &Configuration) -> PathBuf {
 }
 /// Available frontier backend types.
 #[derive(Debug, Copy, Clone, Default, clap::ValueEnum)]
-pub enum BackendType {
+
