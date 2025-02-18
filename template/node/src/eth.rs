@@ -21,4 +21,16 @@ pub use fc_rpc_core::types::{FeeHistoryCache, FeeHistoryCacheLimit, FilterPool};
 pub use fc_storage::{StorageOverride, StorageOverrideHandler};
 use crate::client::{FullBackend, FullClient};
 /// Frontier DB backend type.
-
+pub type FrontierBackend<B, C> = fc_db::Backend<B, C>;
+pub fn db_config_dir(config: &Configuration) -> PathBuf {
+	config.base_path.config_dir(config.chain_spec.id())
+}
+/// Available frontier backend types.
+#[derive(Debug, Copy, Clone, Default, clap::ValueEnum)]
+pub enum BackendType {
+	/// Either RocksDb or ParityDb as per inherited from the global backend settings.
+	#[default]
+	KeyValue,
+	/// Sql database with custom log indexing.
+	Sql,
+}
