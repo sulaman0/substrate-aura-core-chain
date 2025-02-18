@@ -51,3 +51,6 @@ pub fee_history_limit: u64,
 /// The dynamic-fee pallet target gas price set by block author
 	#[arg(long, default_value = "1")]
 pub target_gas_price: u64,
+
+/// Maximum allowed gas limit will be `block.gas_limit * execute_gas_limit_multiplier`
+
