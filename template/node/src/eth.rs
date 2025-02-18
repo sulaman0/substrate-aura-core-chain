@@ -8,3 +8,4 @@ use std::{
 use futures::{future, prelude::*};
 // Substrate
 use sc_client_api::BlockchainEvents;
+use sc_executor::HostFunctions;
