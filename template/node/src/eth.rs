@@ -34,3 +34,4 @@ pub enum BackendType {
 	/// Sql database with custom log indexing.
 	Sql,
 }
+/// The ethereum-compatibility configuration used to run a node.
