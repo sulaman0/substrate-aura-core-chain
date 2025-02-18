@@ -9,3 +9,4 @@ use futures::{future, prelude::*};
 // Substrate
 use sc_client_api::BlockchainEvents;
 use sc_executor::HostFunctions;
+use sc_network_sync::SyncingService;
