@@ -22,3 +22,6 @@ pub use fc_storage::{StorageOverride, StorageOverrideHandler};
 use crate::client::{FullBackend, FullClient};
 /// Frontier DB backend type.
 pub type FrontierBackend<B, C> = fc_db::Backend<B, C>;
+pub fn db_config_dir(config: &Configuration) -> PathBuf {
+	config.base_path.config_dir(config.chain_spec.id())
+}
