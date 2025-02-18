@@ -40,3 +40,17 @@ pub struct EthConfiguration {
 /// Maximum number of logs in a query.
 	#[arg(long, default_value = "10000")]
 	pub max_past_logs: u32,
+
+/// Maximum fee history cache size.
+	#[arg(long, default_value = "2048")]
+pub fee_history_limit: u64,
+
+	#[arg(long)]
+	pub enable_dev_signer: bool,
+
+/// The dynamic-fee pallet target gas price set by block author
+	#[arg(long, default_value = "1")]
+pub target_gas_price: u64,
+
+/// Maximum allowed gas limit will be `block.gas_limit * execute_gas_limit_multiplier`
+
