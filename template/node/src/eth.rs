@@ -53,4 +53,6 @@ pub fee_history_limit: u64,
 pub target_gas_price: u64,
 
 /// Maximum allowed gas limit will be `block.gas_limit * execute_gas_limit_multiplier`
-
+/// when using eth_call/eth_estimateGas.
+	#[arg(long, default_value = "10")]
+	pub execute_gas_limit_multiplier: u64,
