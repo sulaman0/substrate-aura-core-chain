@@ -42,4 +42,6 @@ pub struct EthConfiguration {
 	pub max_past_logs: u32,
 
 /// Maximum fee history cache size.
+	#[arg(long, default_value = "2048")]
+pub fee_history_limit: u64,
 
