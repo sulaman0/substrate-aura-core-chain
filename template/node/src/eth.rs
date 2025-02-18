@@ -47,3 +47,7 @@ pub fee_history_limit: u64,
 
 	#[arg(long)]
 	pub enable_dev_signer: bool,
+
+/// The dynamic-fee pallet target gas price set by block author
+	#[arg(long, default_value = "1")]
+pub target_gas_price: u64,
