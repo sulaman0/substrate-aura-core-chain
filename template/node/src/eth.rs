@@ -45,3 +45,5 @@ pub struct EthConfiguration {
 	#[arg(long, default_value = "2048")]
 pub fee_history_limit: u64,
 
+	#[arg(long)]
+	pub enable_dev_signer: bool,
