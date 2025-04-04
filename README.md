@@ -27,3 +27,5 @@ by higher-level code.
 * `fp-rpc`: RPC primitives. ![Crates.io](https://img.shields.io/crates/v/fp-rpc)
 * `fp-storage`: Well-known storage information.
 ![Crates.io](https://img.shields.io/crates/v/fp-storage)
+
+### Pallets
