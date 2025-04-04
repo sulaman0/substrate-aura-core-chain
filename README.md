@@ -20,3 +20,5 @@ Block feature provides a possible method for a zero-downtime live migration.
 
 Those are suitable to be included in a runtime. Primitives are structures shared
 by higher-level code.
+
+* `fp-consensus`: Consensus layer primitives.
