@@ -17,3 +17,5 @@ Block feature provides a possible method for a zero-downtime live migration.
 ## Releases
 
 ### Primitives
+
+Those are suitable to be included in a runtime. Primitives are structures shared
