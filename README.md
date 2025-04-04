@@ -25,3 +25,4 @@ by higher-level code.
 ![Crates.io](https://img.shields.io/crates/v/fp-consensus)
 * `fp-evm`: EVM primitives. ![Crates.io](https://img.shields.io/crates/v/fp-evm)
 * `fp-rpc`: RPC primitives. ![Crates.io](https://img.shields.io/crates/v/fp-rpc)
+* `fp-storage`:
