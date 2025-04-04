@@ -13,3 +13,5 @@ you can even run many Ethereum L2s inside Frontier!
 Frontier is also a migration framework. Besides the common strategy of direct
 state export/import and transaction-level replays, Frontier's Pre-Log Wrapper
 Block feature provides a possible method for a zero-downtime live migration.
+
+## Releases
