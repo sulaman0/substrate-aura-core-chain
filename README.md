@@ -22,3 +22,4 @@ Those are suitable to be included in a runtime. Primitives are structures shared
 by higher-level code.
 
 * `fp-consensus`: Consensus layer primitives.
+![Crates.io](https://img.shields.io/crates/v/fp-consensus)
