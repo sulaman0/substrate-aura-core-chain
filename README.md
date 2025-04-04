@@ -26,3 +26,4 @@ by higher-level code.
 * `fp-evm`: EVM primitives. ![Crates.io](https://img.shields.io/crates/v/fp-evm)
 * `fp-rpc`: RPC primitives. ![Crates.io](https://img.shields.io/crates/v/fp-rpc)
 * `fp-storage`: Well-known storage information.
+![Crates.io](https://img.shields.io/crates/v/fp-storage)
