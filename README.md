@@ -23,4 +23,4 @@ by higher-level code.
 
 * `fp-consensus`: Consensus layer primitives.
 ![Crates.io](https://img.shields.io/crates/v/fp-consensus)
-* `fp-evm`: 
+* `fp-evm`: EVM primitives. ![Crates.io](https://img.shields.io/crates/v/fp-evm)
