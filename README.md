@@ -39,3 +39,5 @@ Those pallets serve as runtime components for projects using Frontier.
 
 Those precompiles can be used together with `pallet-evm` for additional
 functionalities of the EVM executor.
+
+* `pallet-evm-precompile-simple`: Four 
