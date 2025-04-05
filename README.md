@@ -33,4 +33,4 @@ by higher-level code.
 Those pallets serve as runtime components for projects using Frontier.
 * `pallet-evm`: EVM execution handling. ![Crates.io](https://img.shields.io/crates/v/pallet-evm)
 * `pallet-ethereum`: Ethereum block handling. ![Crates.io](https://img.shields.io/crates/v/pallet-ethereum)
-* `pallet-dynamic-fee`: Extends the fee handling logic so that it can be changed
+* `pallet-dynamic-fee`: Extends the fee handling logic so that it can be changed within the runtime.
