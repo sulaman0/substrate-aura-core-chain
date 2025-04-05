@@ -36,3 +36,5 @@ Those pallets serve as runtime components for projects using Frontier.
 * `pallet-dynamic-fee`: Extends the fee handling logic so that it can be changed within the runtime. ![Crates.io](https://img.shields.io/crates/v/pallet-dynamic-fee)
 
 ### EVM Pallet precompiles
+
+Those precompiles can be used together with `pallet-evm` for additional
