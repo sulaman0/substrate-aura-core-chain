@@ -31,4 +31,4 @@ by higher-level code.
 ### Pallets
 
 Those pallets serve as runtime components for projects using Frontier.
-* `pallet-evm`: EVM execution handling.
+* `pallet-evm`: EVM execution handling. ![Crates.io](https://img.shields.io/crates/v/pallet-evm)
