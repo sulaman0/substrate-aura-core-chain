@@ -43,4 +43,4 @@ functionalities of the EVM executor.
 * `pallet-evm-precompile-simple`: Four basic precompiles in Ethereum EVMs. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-simple)
 * `pallet-evm-precompile-blake2`:  BLAKE2 precompile. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-blake2)
 * `pallet-evm-precompile-bn128`: BN128 precompile. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-bn128)
-* `pallet-evm-precompile-ed25519`: 
+* `pallet-evm-precompile-ed25519`: ED25519 precompile.
