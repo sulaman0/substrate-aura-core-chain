@@ -32,4 +32,15 @@ by higher-level code.
 
 Those pallets serve as runtime components for projects using Frontier.
 * `pallet-evm`: EVM execution handling. ![Crates.io](https://img.shields.io/crates/v/pallet-evm)
-* `pallet-ethereum`: Ethereum block handling.
+* `pallet-ethereum`: Ethereum block handling. ![Crates.io](https://img.shields.io/crates/v/pallet-ethereum)
+* `pallet-dynamic-fee`: Extends the fee handling logic so that it can be changed within the runtime. ![Crates.io](https://img.shields.io/crates/v/pallet-dynamic-fee)
+
+### EVM Pallet precompiles
+
+Those precompiles can be used together with `pallet-evm` for additional
+functionalities of the EVM executor.
+
+* `pallet-evm-precompile-simple`: Four basic precompiles in Ethereum EVMs. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-simple)
+* `pallet-evm-precompile-blake2`:  BLAKE2 precompile. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-blake2)
+* `pallet-evm-precompile-bn128`: BN128 precompile. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-bn128)
+* `pallet-evm-precompile-ed25519`: ED25519 precompile. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-ed25519)
