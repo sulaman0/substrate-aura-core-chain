@@ -40,4 +40,4 @@ Those pallets serve as runtime components for projects using Frontier.
 Those precompiles can be used together with `pallet-evm` for additional
 functionalities of the EVM executor.
 
-* `pallet-evm-precompile-simple`: Four basic precompiles in Ethereum EVMs.
+* `pallet-evm-precompile-simple`: Four basic precompiles in Ethereum EVMs. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-simple)
