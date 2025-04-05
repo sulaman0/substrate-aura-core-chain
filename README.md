@@ -31,3 +31,4 @@ by higher-level code.
 ### Pallets
 
 Those pallets serve as runtime components for projects using Frontier.
+* `pallet-evm`: EVM execution handling.
