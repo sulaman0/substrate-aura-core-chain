@@ -46,3 +46,12 @@ functionalities of the EVM executor.
 * `pallet-evm-precompile-ed25519`: ED25519 precompile. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-ed25519)
 * `pallet-evm-precompile-modexp`: MODEXP precompile.  ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-modexp)
 * `pallet-evm-precompile-sha3fips`: Standard SHA3 precompile. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-sha3fips)
+* `pallet-evm-precompile-dispatch`: Enable interoperability between EVM contracts and other Substrate runtime components. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-dispatch)
+
+### Client-side libraries
+
+Those are libraries that should be used on client-side to enable RPC, block hash
+mapping, and other features.
+
+* `fc-consensus`: Consensus block import. ![Crates.io](https://img.shields.io/crates/v/fc-consensus)
+* `fc-db`: Frontier-specific database backend. ![Crates.io](https://img.shields.io/crates/v/fc-db)
