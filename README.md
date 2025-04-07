@@ -54,3 +54,4 @@ Those are libraries that should be used on client-side to enable RPC, block hash
 mapping, and other features.
 
 * `fc-consensus`: Consensus block import. ![Crates.io](https://img.shields.io/crates/v/fc-consensus)
+* `fc-db`:
