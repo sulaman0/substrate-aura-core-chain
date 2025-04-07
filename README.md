@@ -49,3 +49,5 @@ functionalities of the EVM executor.
 * `pallet-evm-precompile-dispatch`: Enable interoperability between EVM contracts and other Substrate runtime components. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-dispatch)
 
 ### Client-side libraries
+
+Those are libraries that should be used on client-side to enable RPC, block hash
