@@ -45,4 +45,4 @@ functionalities of the EVM executor.
 * `pallet-evm-precompile-bn128`: BN128 precompile. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-bn128)
 * `pallet-evm-precompile-ed25519`: ED25519 precompile. ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-ed25519)
 * `pallet-evm-precompile-modexp`: MODEXP precompile.  ![Crates.io](https://img.shields.io/crates/v/pallet-evm-precompile-modexp)
-* `pallet-evm-precompile-sha3fips`
+* `pallet-evm-precompile-sha3fips`: Standard SHA3 precompile.
