@@ -73,4 +73,4 @@ releases.
 
 When you make a pull request against this repository, please also update the
 affected crates' versions, using the following rules. Note that the rules should
-be applied recursively --
+be applied recursively -- if a change modifies any upper crate's dependency
