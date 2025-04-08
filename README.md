@@ -70,3 +70,4 @@ All changes (except new releases) are handled through pull requests.
 Frontier follows [Semantic Versioning](https://semver.org/). An unreleased crate
 in the repository will have the `-dev` suffix in the end, and we do rolling
 releases.
+
