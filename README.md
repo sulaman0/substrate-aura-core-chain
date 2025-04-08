@@ -63,3 +63,4 @@ mapping, and other features.
 
 ### Pull request
 
+All changes (except new releases) are handled through pull requests.
