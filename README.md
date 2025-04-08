@@ -67,3 +67,4 @@ All changes (except new releases) are handled through pull requests.
 
 ### Versioning
 
+Frontier follows [Semantic Versioning](https://semver.org/). An unreleased crate
