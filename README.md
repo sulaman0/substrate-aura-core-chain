@@ -72,3 +72,4 @@ in the repository will have the `-dev` suffix in the end, and we do rolling
 releases.
 
 When you make a pull request against this repository, please also update the
+affected crates' versions, using the following rules.
