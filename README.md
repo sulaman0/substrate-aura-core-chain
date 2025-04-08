@@ -55,4 +55,4 @@ mapping, and other features.
 
 * `fc-consensus`: Consensus block import. ![Crates.io](https://img.shields.io/crates/v/fc-consensus)
 * `fc-db`: Frontier-specific database backend. ![Crates.io](https://img.shields.io/crates/v/fc-db)
-* `fc-mapping-sync`:
+* `fc-mapping-sync`: Block hash mapping syncing logic. ![Crates.io](https://img.shields.io/crates/v/fc-mapping-sync)
