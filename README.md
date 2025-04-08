@@ -71,3 +71,4 @@ Frontier follows [Semantic Versioning](https://semver.org/). An unreleased crate
 in the repository will have the `-dev` suffix in the end, and we do rolling
 releases.
 
+When you make a pull request against this repository, please also update the
