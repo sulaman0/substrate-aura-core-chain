@@ -55,3 +55,24 @@ mapping, and other features.
 
 * `fc-consensus`: Consensus block import. ![Crates.io](https://img.shields.io/crates/v/fc-consensus)
 * `fc-db`: Frontier-specific database backend. ![Crates.io](https://img.shields.io/crates/v/fc-db)
+* `fc-mapping-sync`: Block hash mapping syncing logic. ![Crates.io](https://img.shields.io/crates/v/fc-mapping-sync)
+* `fc-rpc-core`: Core RPC logic.  ![Crates.io](https://img.shields.io/crates/v/fc-rpc-core)
+* `fc-rpc`: RPC implementation.  ![Crates.io](https://img.shields.io/crates/v/fc-rpc)
+
+## Development workflow
+
+### Pull request
+
+All changes (except new releases) are handled through pull requests.
+
+### Versioning
+
+Frontier follows [Semantic Versioning](https://semver.org/). An unreleased crate
+in the repository will have the `-dev` suffix in the end, and we do rolling
+releases.
+
+When you make a pull request against this repository, please also update the
+affected crates' versions, using the following rules. Note that the rules should
+be applied recursively -- if a change modifies any upper crate's dependency
+(even just the `Cargo.toml` file), then the upper crate will also need to apply
+those rules.
