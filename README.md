@@ -58,3 +58,5 @@ mapping, and other features.
 * `fc-mapping-sync`: Block hash mapping syncing logic. ![Crates.io](https://img.shields.io/crates/v/fc-mapping-sync)
 * `fc-rpc-core`: Core RPC logic.  ![Crates.io](https://img.shields.io/crates/v/fc-rpc-core)
 * `fc-rpc`: RPC implementation.  ![Crates.io](https://img.shields.io/crates/v/fc-rpc)
+
+## Development workflow
