@@ -76,3 +76,5 @@ affected crates' versions, using the following rules. Note that the rules should
 be applied recursively -- if a change modifies any upper crate's dependency
 (even just the `Cargo.toml` file), then the upper crate will also need to apply
 those rules.
+
+Additionally, if your change is notable, then you should also modify the
