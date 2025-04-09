@@ -78,3 +78,4 @@ be applied recursively -- if a change modifies any upper crate's dependency
 those rules.
 
 Additionally, if your change is notable, then you should also modify the
+corresponding `CHANGELOG.md` file, in the "Unreleased" section.
