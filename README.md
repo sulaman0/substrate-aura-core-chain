@@ -96,3 +96,4 @@ If the affected crate does not yet have `-dev` suffix:
 * If your change modifies the current interface, then bump the major version,
   and add `-dev` suffix.
 
+If your pull request introduces a new crate, please set its version to
