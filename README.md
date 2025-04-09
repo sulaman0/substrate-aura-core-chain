@@ -83,3 +83,4 @@ corresponding `CHANGELOG.md` file, in the "Unreleased" section.
 If the affected crate already has `-dev` suffix:
 
 * If your change is a patch, then you do not have to update any versions.
+* If your change introduces a new feature, please check if the local version
