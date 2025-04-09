@@ -90,3 +90,4 @@ If the affected crate already has `-dev` suffix:
 
 If the affected crate does not yet have `-dev` suffix:
 
+* If your change is a patch, then bump the patch version, and add `-dev` suffix.
