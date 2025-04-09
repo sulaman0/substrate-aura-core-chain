@@ -86,3 +86,4 @@ If the affected crate already has `-dev` suffix:
 * If your change introduces a new feature, please check if the local version
   already had its minor version bumped, if not, bump it.
 * If your change modifies the current interface, please check if the local
+  version already had its major version bumped, if not, bump it.
