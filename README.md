@@ -94,3 +94,4 @@ If the affected crate does not yet have `-dev` suffix:
 * If your change introduces a new feature, then bump the minor version, and add
   `-dev` suffix.
 * If your change modifies the current interface, then bump the major version,
+  and add `-dev` suffix.
